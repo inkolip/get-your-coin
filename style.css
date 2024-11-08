@@ -1,0 +1,127 @@
+/* التصميم الأساسي */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* تنسيق حاوية تسجيل الدخول */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.login-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #f1faee;
+}
+
+.welcome-text {
+    font-size: 1em;
+    color: #a8dadc;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الحقول */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.9em;
+    color: #f1faee;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #457b9d;
+    font-size: 1em;
+    color: #333;
+    background-color: #f1faee;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #a8dadc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* زر تسجيل الدخول */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f1faee;
+    background-color: #e63946;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #d62839;
+}
+
+/* نص التذييل */
+.footer-text {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #a8dadc;
+    opacity: 0.8;
+}
+
+
+/* زر القائمة */
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* القائمة المخفية */
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.menu-list a {
+    color: #a8dadc;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.menu-list a:hover {
+    background-color: #457b9d;
+    border-radius: 5px;
+}

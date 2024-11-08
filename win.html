@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win</title>
+    <link rel="stylesheet" href="win.css">
+</head>
+<body>
+    <header>
+        <h1>Win</h1>
+    </header>
+
+    <section class="videos-section">
+        <h2>Complete the videos to earn coins</h2>
+        <div class="video-grid">
+            <div class="video-box" onclick="window.location.href='https://youtu.be/mKMjNLLC2W4?si=s4AC-00y3_Usc_ie' ">Video 1</div>
+            <div class="video-box" onclick="window.location.href='https://youtu.be/jeNL5cLIHIU?si=EMstAxNzySWGOTFv'">Video 2</div>
+            <div class="video-box" onclick="window.location.href='https://youtu.be/ISeWlymcu1Q?si=5S9XA7lxMta8d5tf'">Video 3</div>
+            <div class="video-box" onclick="window.location.href='https://youtu.be/cHuJPv_asSo?si=fnBd2e_oowUr-R5S'">Video 4</div>
+        </div>
+    </section>
+
+    <section class="transformation-section">
+        <button class="scroll-button" onclick="scrollToConvert()">Transformation</button>
+    </section>
+
+    <section class="convert-section" id="convert-section">
+        <div class="convert-options">
+            <button class="convert-button" onclick="showMessage(1000)">Convert 1000</button>
+            <button class="convert-button" onclick="showMessage(10000)">Convert 10000</button>
+        </div>
+        <div id="message" class="message"></div>
+    </section>
+
+    <script>
+        function scrollToConvert() {
+            document.getElementById("convert-section").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function showMessage(amount) {
+            document.getElementById("message").textContent = 'Complete the videos to get the currency';
+        }
+    </script>
+</body>
+</html>
